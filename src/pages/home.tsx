@@ -70,7 +70,12 @@ export default class Home extends React.Component<IProps, IState> {
         <div
           className={styleButton}
           onClick={() => {
-            window.location.replace(content);
+            try {
+              window.open(`googlechrome://navigate?url=${content}`);
+            } catch (error) {
+              console.error("Failed to open Chrome", error);
+              window.open(content);
+            }
           }}
         >
           Open
