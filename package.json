@@ -7,9 +7,10 @@
     "dev": "webpack-dev-server --hot",
     "watch": "webpack-dev-server --hot",
     "release": "rm -rf dist/* && webpack --progress --config webpack.release.js",
-    "build": "yarn release",
+    "build": "yarn release && cp assets/manifest.json dist/",
     "serve": "http-server dist/ -s",
-    "postinstall": "rm -rfv node_modules/@types/*/node_modules/@types/react"
+    "postinstall": "rm -rfv node_modules/@types/*/node_modules/@types/react",
+    "upload": "rsync -avr --progress dist/* tiye.me:repo/Memkits/qrcode-reader"
   },
   "keywords": [],
   "author": "",

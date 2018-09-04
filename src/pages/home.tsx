@@ -34,7 +34,7 @@ export default class Home extends React.Component<IProps, IState> {
     return (
       <div className={cx(fullscreen, column)}>
         <QrReader
-          delay={300}
+          delay={140}
           onError={(error) => {
             console.error(error);
           }}

@@ -1,0 +1,15 @@
+{
+  "short_name": "QR code reader",
+  "name": "QR code reader",
+  "icons": [
+    {
+      "src": "http://cdn.tiye.me/logo/qrcode-reader.png",
+      "sizes": "320x320"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "background_color": "#eeeeff",
+  "theme_color": "#eeeeff"
+}
