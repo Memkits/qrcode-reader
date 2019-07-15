@@ -24,7 +24,7 @@ export default class Home extends React.Component<IProps, IState> {
   }
 
   immerState(f: (s: IState) => void) {
-    this.setState(produce<IState>(f));
+    this.setState(produce(f));
   }
 
   render() {
